@@ -1,0 +1,11 @@
+version: '3.1'
+
+services:
+  django-proj-img:
+    build: .
+    container_name: mysite-django-proj
+    restart: 'always'
+    ports:
+      - 8000:8000
+    volumes:
+      - .:/django/app
